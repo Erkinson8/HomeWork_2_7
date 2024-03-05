@@ -149,8 +149,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSendClick(View view) {
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra("result", textView.getText().toString()); // Передаем результат в новую активность
-        startActivity(intent); // Запускаем новую активность
+        intent.putExtra("result", textView.getText().toString());
+        startActivity(intent);
     }
 
 }
