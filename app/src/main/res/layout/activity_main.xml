@@ -13,16 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
+
         <TextView
             android:id="@+id/text0"
-            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:textColor="@color/white"
-            android:textSize="80sp"
+            android:layout_marginEnd="30dp"
             android:maxLines="3"
             android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textColor="@color/white"
+            android:textSize="80sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/send"
+            android:layout_width="120dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:text="send"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:visibility="invisible"
+            android:onClick="onSendClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
     </FrameLayout>
 
 <LinearLayout
